@@ -94,8 +94,6 @@ if __name__ == '__main__':
     while 1:
         try:
 
-            print("RECEIVING IRC MESSAGE")
-
             # Receive reply from irc server
             message = irc_socket.recv(1024)
 
@@ -124,7 +122,6 @@ if __name__ == '__main__':
                 irc_socket.send(("JOIN " + channel + "\r\n").encode("UTF-8"))
 
             print("RECEIVED: " + message)
-
 
             # If IRC 433 error - nickname in use, we try a different a nickname
             if "433" in message:
