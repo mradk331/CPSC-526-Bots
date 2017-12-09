@@ -135,7 +135,6 @@ def print_move_result(irc_socket):
 
     except Exception as e:
 
-        print(str(e))
         print("0 bots moved.")
 
 
@@ -347,7 +346,7 @@ if __name__ == '__main__':
 
         # Timeout on receive (for when no reply from bots)
         except Exception as e:
-            print(str(e))
+
             if str(e) == "timed out":
                 print("No reply from bots.")
 

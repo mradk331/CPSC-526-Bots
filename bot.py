@@ -211,7 +211,7 @@ if __name__ == '__main__':
                                     ("USER " + nickname + " 0 " + " * " + " :" + "I am " + nickname + "\r\n").encode(
                                         "UTF-8"))
 
-                                move_socket.send(("JOIN " + channel + "\r\n").encode("UTF-8"))
+                                move_socket.send(("JOIN " + move_channel + "\r\n").encode("UTF-8"))
 
                                 send_message(irc_socket, sender_name, "Move to IRC server successful.")
 
