@@ -228,7 +228,7 @@ if __name__ == '__main__':
 
                             except Exception as e:
 
-                                send_message(irc_socket, sender_name, "Move to IRC server unsuccessful.")
+                                send_message(irc_socket, sender_name, "Move to IRC server failure.")
                         else:
                             send_message(irc_socket, sender_name, "No host, port or "
                                                                   "channel provided for bot to be moved to.")

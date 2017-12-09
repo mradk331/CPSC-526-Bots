@@ -126,7 +126,7 @@ def print_move_result(irc_socket):
                     if "successful" in bot:
                         success_bots += 1
 
-                    elif "unsuccessful" in bot:
+                    elif "failure" in bot:
                         fail_bots += 1
 
         print("Number of bots succesfully moved: " + str(success_bots))
